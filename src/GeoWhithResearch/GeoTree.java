@@ -9,9 +9,13 @@ public class GeoTree {
         return tree;
     }
 
-    public void append(Person parent, Person children) {
+    public void appendChild(Person parent, Person children) {
         tree.add(new Node(parent, Relationship.parent, children));
         tree.add(new Node(children, Relationship.children, parent));
+    }
+    public void appendMarrege(Person maile, Person femail) {
+        tree.add(new Node(maile, Relationship.marriage, femail));
+        tree.add(new Node(femail, Relationship.marriage, maile));
     }
 
 }
