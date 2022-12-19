@@ -14,7 +14,7 @@ public class Reserch {
         result.add(p.getFullName() + " является " + re.toString() + " для : ");
         /*
         При выводе на печать появляется дополнительная запятая после :
-        Фиксить  не по заданию
+        Делать метод для красивой печати - не отностится к тебме семинара.
          */
         for (Node t : tree) {
             if (t.p1.fullName == p.fullName && t.re == re) {

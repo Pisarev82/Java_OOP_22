@@ -3,6 +3,10 @@ package GeoWhithResearch;
 import java.util.Arrays;
 
 public class Main {
+    /*
+    Изучено строение и работа классов в пакете GeoWithResearch
+    Добавленна связь marriage и реализован ее вывод в консоль.
+     */
     public static void main(String[] args) {
         Person irina = new Person("Ирина");
         Person alesha = new Person("Алеша");
