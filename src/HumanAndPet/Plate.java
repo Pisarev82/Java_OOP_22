@@ -7,8 +7,12 @@ public class Plate {
         return isFill;
     }
 
-    public void setFill(boolean fill) {
-        isFill = fill;
+    public void setFill() {
+        this.isFill = false;
+    }
+
+    public void setEmpty() {
+        this.isFill = true;
     }
 
 }

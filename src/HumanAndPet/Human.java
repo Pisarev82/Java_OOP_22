@@ -13,7 +13,7 @@ public class Human {
     }
 
     public void fed (Plate plate) {
-        plate.setFill(false);
+        plate.setFill();
         System.out.println("Насыпали корм");
     }
     @Override
