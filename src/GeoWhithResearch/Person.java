@@ -1,11 +1,13 @@
 package GeoWhithResearch;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Objects;
 
-public class Person {
+public class Person implements SaveToFile{
     public String fullName;
-
     public int age;
+    private String faileName = "Person.txt";
 
     public Person(String fullName, int age) {
         this.fullName = fullName;
@@ -16,6 +18,19 @@ public class Person {
         return fullName;
     }
 
+    @Override
+    public String toString() {
+        return fullName + ' ' +age;
+    }
+
+    @Override
+    public void saveToFile() throws IOException {
+        try (FileWriter writer = new FileWriter(faileName, false)) {
+            writer.write(toString());
+            writer.flush();
+        } catch (IOException ex) {
+        }
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -28,3 +43,5 @@ public class Person {
         return Objects.hash(getFullName(), age);
     }
 }
+
+

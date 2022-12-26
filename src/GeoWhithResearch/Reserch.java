@@ -3,6 +3,7 @@ package GeoWhithResearch;
 import java.util.ArrayList;
 
 public class Reserch {
+
     ArrayList<String> result = new ArrayList<>();
     ArrayList<Node> tree;
 

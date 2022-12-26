@@ -34,7 +34,7 @@ public abstract class Pet {
 
     @Override
     public String toString() {
-        return  "Кот " + Name ;
+        return  "Животное " + Name ;
     }
 }
 

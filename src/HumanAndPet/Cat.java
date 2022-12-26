@@ -6,7 +6,6 @@ public class Cat extends Pet implements PetBehavior {
         super(name);
     }
 
-
     public void voice () {
         System.out.println("Myauuu");
     }
@@ -17,7 +16,6 @@ public class Cat extends Pet implements PetBehavior {
             System.out.println("Щарапается и кусается");
         }
     }
-
 
     @Override
     public String toString() {

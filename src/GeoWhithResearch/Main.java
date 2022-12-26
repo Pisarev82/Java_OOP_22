@@ -1,5 +1,7 @@
 package GeoWhithResearch;
 
+import java.io.IOException;
+
 public class Main {
     /*
     Изучено строение и работа классов в пакете GeoWithResearch
@@ -14,7 +16,15 @@ public class Main {
      (и про родословную и про национальность и про дополнительные связи думал. Все это реализуется просто добавлением полей.)
      А методы в Reserch настолько уникальны, что использовать для них интерфейсы странно.
      */
-    public static void main(String[] args) {
+    /*
+    Для дз 3:
+    Добавлен интерфейс SaveToFile
+    Интерфейс имплементорован в классы Person и GeoTree. В класс Reserch имплементировать не вижу смысла, потому
+    что в самом классе нет данных которые стоит сохранять. Можно имплементировать в класс Main , но это тоже так себе идея,
+    потому что это основной класс и писать в нем дополнительные методы, тем более интерфейсные мне кажется не по джавийски.
+    По джавийски будет сделать еще один класс, в который перести всю логику из main и уже в него имплиментировать интерфейс.
+     */
+    public static void main(String[] args) throws IOException {
         Person irina = new Person("Ирина", 30);
         Person alesha = new Person("Алеша", 33);
         Person vasya = new Person("Вася", 1);
@@ -36,6 +46,9 @@ public class Main {
                 Relationship.marriage));
 
         System.out.println(new Reserch(gt).spend(29));
+
+        ivan.saveToFile();
+        gt.saveToFile();
     }
 
 }

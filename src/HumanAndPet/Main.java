@@ -1,8 +1,10 @@
 package HumanAndPet;
 
 public class Main {
-
-
+    /*
+    Для 3 ДЗ ничего не делал. Просто убрал лишние переносы строк, и исправил вывод на печать, что бы соответсвовал логике
+    Исправил опечатки так сказать.
+    */
     public static void main(String[] args) {
         Human human = new Human("Николай Владимирович");
         Cat cat = new Cat("Дармоед");
